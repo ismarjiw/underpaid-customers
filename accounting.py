@@ -71,18 +71,15 @@ def generate_melon_report(path):
         count = int(entry[2])
         payment = float(entry[3])
 
-    print(f'Each melon costs: ${cost} ')
-    print(f'The customers name is: {customer} ')
-    print(f'The customer bought: {count} melons ')
-    print(f'The customer paid: ${payment}')
+        print(f'Each melon costs: ${cost} ')
+        print(f'The customers name is: {customer} ')
+        print(f'The customer bought: {count} melons ')
+        print(f'The customer paid: ${payment}')
 
-    customer_expected = count * cost
-    if customer_expected != payment:
-        print(f"{customer} paid ${payment:.2f},", 
-        f"expected ${customer_expected:.2f}")
+        customer_expected = count * cost
+        if customer_expected != payment:
+            print(f"{customer} paid ${payment:.2f},", 
+            f"expected ${customer_expected:.2f}")
 
 print(generate_melon_report('customer-orders.txt')) 
-
-
-
 
