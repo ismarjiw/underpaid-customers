@@ -62,8 +62,8 @@
 
 
 
-def generate_melon_report(path):
-    log = open(path)
+def generate_melon_report(file):
+    log = open(file)
     for line in log:
         entry = line.split('|')
         cost = float(1.00)
